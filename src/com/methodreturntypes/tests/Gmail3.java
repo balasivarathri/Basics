@@ -2,7 +2,7 @@ package com.methodreturntypes.tests;
 
 public class Gmail3 {
 
-	public int getInt(int x) {
+	public static int getInt(int x) {
 		return x;
 	}
 }
