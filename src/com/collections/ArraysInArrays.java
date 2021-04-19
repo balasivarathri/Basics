@@ -9,7 +9,7 @@ public class ArraysInArrays {
 	public static void main(String[] args) {
 
 
-		ArrayList<Integer> ar = new ArrayList<Integer>(Arrays.asList(10,20,30,40));
+		ArrayList<Integer> ar = new ArrayList<Integer>(Arrays.asList(10,20,30,40,30));
 		System.out.println(ar.size());
 		ar.remove(3);
 		

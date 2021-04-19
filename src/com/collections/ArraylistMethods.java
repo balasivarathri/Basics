@@ -36,10 +36,10 @@ public class ArraylistMethods {
 		 */
 
 		
-		System.out.println(ar.contains("telugu"));
+		System.out.println(ar.contains("Telugu"));
 		
 		//To find last Index of element
-		int i = ar.lastIndexOf("Maths");
+		int i = ar.indexOf("Hindi");
 		System.out.println(i);
 		
 		ArrayList<Integer> ar3 = new ArrayList<Integer>(Arrays.asList(1,2,3,4,5,6,7,8,9,10));
@@ -48,14 +48,14 @@ public class ArraylistMethods {
 		
 		//RetainAll method with Singleton
 		
-		ArrayList<Integer> numberlist = new ArrayList<Integer>(Arrays.asList(1,2,3,4,2,5,6,2,7,8,3,9,10));
+		ArrayList<Integer> numberlist = new ArrayList<Integer>(Arrays.asList(1,2,3,4,2,3,5,6,2,7,8,3,9,10));
 		System.out.println(numberlist);
-		numberlist.retainAll(Collections.singleton(3));
+		numberlist.retainAll(Collections.singleton(2));
 		System.out.println(numberlist);
 		
 		//To get the sublist
-		ArrayList<Integer> numberlist1 = new ArrayList<Integer>(Arrays.asList(1,2,3,4,2,5,6,2,7,8,3,9,10));
-		ArrayList<Integer> sublist = new ArrayList<Integer>(numberlist1.subList(3, 6));
+		ArrayList<Integer> numberlist1 = new ArrayList<Integer>(Arrays.asList(1,2,3,4,2,5,6,2,7,8,9,10));
+		ArrayList<Integer> sublist = new ArrayList<Integer>(numberlist1.subList(1, 9));
 		System.out.println(sublist);
 		
 		//Convert ArrayList into array object
@@ -66,5 +66,6 @@ public class ArraylistMethods {
 		for(Object s:arr) {
 			System.out.println(s);
 		}
+		//ArrayList<String, Integer> j1 = new ArralyList<String, Integer> (Arrays.asList("Bala", 56));
 	}
 }
